@@ -28,7 +28,7 @@ window.onload = function () {
                 let span_inner = document.createElement("span");
                 span_inner.className = "tooltip";
 
-                // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
+                span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
                 a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM `;
 
 
@@ -52,7 +52,7 @@ window.onload = function () {
                      let span_inner = document.createElement("span");
                      span_inner.className = "tooltip";
 
-                     // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
+                     span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
                      a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM`;
 
 
@@ -77,7 +77,7 @@ window.onload = function () {
                     let span_inner = document.createElement("span");
                     span_inner.className = "tooltip";
 
-                    // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
+                    span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
                     a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM`;
 
 
