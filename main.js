@@ -1,5 +1,5 @@
 
-let a = function () {
+window.onload = function () {
     let tableWrapper = document.getElementsByClassName("main-table-flex main-table")[0];
     console.dir(tableWrapper);
     let counter = 3;
@@ -81,7 +81,6 @@ let a = function () {
     }
 };
 
-a();
 
 // window.onload = function(){
 //     var some = document.getElementsByClassName('tooltip')[0];
