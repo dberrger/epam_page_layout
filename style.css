@@ -404,7 +404,7 @@ th {
     right: 0;
     display: flex;
     flex-direction: row;
-    z-index: -1;
+    z-index: 0;
 
 }
 
@@ -417,7 +417,7 @@ th {
     height: 13%;
     overflow: hidden;
     padding-left: 10%;
-    z-index: 3;
+    z-index: 1;
 }
 
 .sb-content__calendar-additional-info {
@@ -503,7 +503,7 @@ th {
         height: 13%;
         overflow: hidden;
         padding-left: 10%;
-        z-index: 3;
+        z-index: 2;
     }
 }
 
@@ -530,7 +530,7 @@ th {
         height: 12%;
         overflow: hidden;
         padding-left: 10%;
-        z-index: 3;
+        z-index: 2;
     }
 }
 
@@ -557,7 +557,7 @@ th {
         height: 13%;
         overflow: hidden;
         padding-left: 10%;
-        z-index: 3;
+        z-index: 2;
     }
 }
 
@@ -697,3 +697,48 @@ footer {
 /*width: 100%;*/
 /*overflow:hidden;*/
 /*}*/
+
+
+.has-tooltip {
+    position: relative;
+    display: inline;
+    z-index: 5;
+}
+.tooltip-wrapper {
+    position: fixed;
+    visibility: hidden;
+    z-index: 5;
+}
+.has-tooltip:hover .tooltip-wrapper {
+    visibility: visible;
+    margin-left: 133px;
+    margin-top: 60px;
+    z-index: 5;
+    border: 1px solid #000000;
+
+}
+
+.tooltip {
+    display: block;
+    position: relative;
+    /*width: 400px;*/
+    /*height: 96px;*/
+    /*margin-left: -76px;*/
+    color: #000;
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    z-index: 5;
+}
+.tooltip:after {
+    content: '';
+    position: relative;
+    bottom: 100%;
+    left: 2%;
+    margin-left: -1px;
+    width: 20px;
+    height: 0;
+    z-index: 5;
+
+
+}

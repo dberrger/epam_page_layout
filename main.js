@@ -21,13 +21,22 @@ window.onload = function () {
                 div_2.className = "sb-content__calendar-note-1";
                 let div_2_inner = document.createElement("div");
                 div_2_inner.className = "sb-content__calendar-note-1-colorblock1";
-                let a = document.createElement("div");
-                a.className = "sb-content__calendar-todo-link tooltip";
-                a.innerHTML = "Letter #01-01 \"Whatever\" from Organization 1 to EPAM";
+                let a = document.createElement("a");
+                a.className = `sb-content__calendar-todo-link has-tooltip`;
+                let span = document.createElement("span");
+                span.className = "tooltip-wrapper";
+                let span_inner = document.createElement("span");
+                span_inner.className = "tooltip";
+
+                // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
+                a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM `;
+
 
                 td.appendChild(div_2);
                 div_2.appendChild(div_2_inner);
                 div_2.appendChild(a);
+                span.appendChild(span_inner);
+                a.appendChild(span);
             }
 
              for(let k = 1; k < 3; k++) {
@@ -36,14 +45,22 @@ window.onload = function () {
                      div_2.className = `sb-content__calendar-note-yellow-${k}`;
                      let div_2_inner = document.createElement("div");
                      div_2_inner.className = `sb-content__calendar-note-1-colorblock3`;
-                     let a = document.createElement("div");
-                     a.className = `sb-content__calendar-todo-link tooltip`;
+                     let a = document.createElement("a");
+                     a.className = `sb-content__calendar-todo-link has-tooltip`;
+                     let span = document.createElement("span");
+                     span.className = "tooltip-wrapper";
+                     let span_inner = document.createElement("span");
+                     span_inner.className = "tooltip";
+
+                     // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
                      a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM`;
 
 
                      td.appendChild(div_2);
                      div_2.appendChild(div_2_inner);
                      div_2.appendChild(a);
+                     span.appendChild(span_inner);
+                     a.appendChild(span);
                  }
              }
 
@@ -53,14 +70,22 @@ window.onload = function () {
                     div_2.className = `sb-content__calendar-note-${k}`;
                     let div_2_inner = document.createElement("div");
                     div_2_inner.className = `sb-content__calendar-note-1-colorblock${k}`;
-                    let a = document.createElement("div");
-                    a.className = `sb-content__calendar-todo-link tooltip`;
+                    let a = document.createElement("a");
+                    a.className = `sb-content__calendar-todo-link has-tooltip`;
+                    let span = document.createElement("span");
+                    span.className = "tooltip-wrapper";
+                    let span_inner = document.createElement("span");
+                    span_inner.className = "tooltip";
 
+                    // span_inner.innerHTML = `TootipTootipTootipTootipTootipTootipTootipTootipTootipTootip`;
                     a.innerHTML = `Letter #01-01 \"Whatever\" from Organization 1 to EPAM`;
+
 
                     td.appendChild(div_2);
                     div_2.appendChild(div_2_inner);
                     div_2.appendChild(a);
+                    span.appendChild(span_inner);
+                    a.appendChild(span);
                 }
 
             }
